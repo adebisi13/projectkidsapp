@@ -135,5 +135,12 @@ nav {
     .navRight{
         display: none;
     }
+    .bannerWrapper{
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+    .bannerImg{
+        width: 100%;
+    }
     
 }
