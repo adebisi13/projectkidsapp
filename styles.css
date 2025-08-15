@@ -10,6 +10,8 @@ nav {
     /* border: 2px solid blue; */
     background-color: #f0f9ff;
     padding-block: 1rem;
+    position: fixed;
+    width: 100%;
 }
 .innerNav {
     display: flex;
@@ -67,7 +69,7 @@ nav {
 }
 /* banner styling */
 .secOne{
-    padding-block: 2rem;
+    padding-block: 4.3rem;
 }
 .bannerWrapper {
     /* background-color: red; */
@@ -126,10 +128,86 @@ nav {
     height: 30rem;
     /* object-fit: cover; */
 }
+.about {
+    /* padding: 3rem; */
+    /* padding-block: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutImg {
+    flex: 1;
+}
+.aboutContent {
+    flex: 1;
+}
+.titleBage {
+    background-color: #f2d117;
+    width: 25%;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.aboutContent > h1 {
+    color: #0a0650;
+    text-transform: capitalize;
+    /* font-weight: 500; */
+    font-size: 20px;
+    width: 250px;
+    margin-block: 1rem ;
+}
+.trackInfo {
+    border: 2px solid transparent;
+    max-width: 350px;
+    margin: auto;
+}
+.trackInfo > h5 {
+    margin: auto;
+}
+.trackInfo > h2 {
+    text-align: center;
+}
+.trackBtns {
+    padding-top:1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+select {
+    background-color: #f0f9ff;
+    padding: .2rem .2rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    color: #0a0650;
+    display: block;
+    margin: 1rem auto;
+}
+.trackBtns > button:nth-child(2), .trackBtns > button:nth-child(3) {
+      background-color:transparent;
+    border: 1px solid #180ec7;
+    color: #180ec7;
+    padding:.3rem 1.4rem ;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.trackBtns > button:nth-child(1) {
+     background-color:#180ec7;
+    border: 1px solid #180ec7;
+    color: #fff;
+    padding:.3rem 1.4rem ;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
 
  /* responsive  code*/
 @media (min-width: 320px) and (max-width: 500px) {
-    .innerNav{
+    .innerNav{ 
         width: calc(100% - 40px);
     }
     .navRight{
@@ -144,3 +222,18 @@ nav {
     }
     
 }
+ /* about rensponsive code */
+ @media(min-width:320px) and (max-width: 500px){
+    .about{
+        flex-direction: column;
+        width: calc(100% -40px);
+    }
+
+    .aboutContent{
+        width: 100%;
+    }
+    .aboutImg{
+        width: 100%;
+        margin-top: 18rem;
+    }
+ }
