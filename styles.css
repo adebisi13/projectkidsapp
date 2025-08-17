@@ -205,6 +205,70 @@ select {
     font-size: 12px;
 }
 
+.gridPic {
+    border: 2px solid transparent;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto, auto;
+}
+
+.grd5 {
+    grid-column: 1/5;    
+}
+
+.pricing{
+    border: 2px solid blue;
+    margin: 10rem 0rem;
+    padding: 5rem 0rem;
+}
+
+.ptners {
+    border: 2px solid transparent;
+    align-items: center;
+}
+.ptnrs > :nth-child(1){
+    margin: auto;
+}
+
+ .h {
+    border: 2px solid transparent;
+    padding: 1rem 0rem;
+    text-align: center;
+    margin: auto;
+}
+
+.price {
+    border:2px solid transparent;
+    margin: 6rem 0rem;
+    padding: 1rem 0rem;
+}
+.price > :nth-child(1){
+    margin: auto;
+}
+
+.gridd {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.price > .btn {
+    border: 2px solid blue ;
+    padding-left: 25rem;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.price .btn > button {
+    border-radius: 2px solid transparent;
+    background-color: #20c464;
+    padding: 0.4rem;
+    border-radius: 25px;
+}
+
  /* responsive  code*/
 @media (min-width: 320px) and (max-width: 500px) {
     .innerNav{ 
