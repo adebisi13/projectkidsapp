@@ -218,7 +218,7 @@ select {
 }
 
 .pricing{
-    border: 2px solid blue;
+    border: 2px solid transparent;
     margin: 10rem 0rem;
     padding: 5rem 0rem;
 }
@@ -256,7 +256,7 @@ select {
 }
 
 .price > .btn {
-    border: 2px solid blue ;
+    border: 2px transparent ;
     padding-left: 25rem;
     margin: auto;
     padding-top: 3rem;
@@ -268,6 +268,199 @@ select {
     padding: 0.4rem;
     border-radius: 25px;
 }
+
+.location {
+    border: 2px solid blue;
+    padding: 3rem 0rem;
+}
+
+.location > :nth-child(1) {
+    margin: auto;
+}
+
+.flex {
+    border: 2px solid red;
+    padding: 1rem 0rem;
+}
+
+.h3 {
+    display: flex;
+}
+.h3 > h3 {
+    flex: 1;
+    color: #0a0650;
+}
+
+.loc {
+    background-color: #f0f9ff;
+    border: 2px solid transparent;
+}
+
+
+.container {
+    border: 2px solid pink;
+    padding: 3rem 0rem;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container > :nth-child(1) {
+    margin: auto;
+}
+
+.container > .h > h2 {
+    color: #0a0650;
+}
+/* FAQ */
+.faq {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hh {
+    color: #180ec7;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  color: #0a0650;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon {
+    background-color: #f0f9ff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 100%;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none;
+  color: #555;
+  font-size: 15px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+/* Contact */
+.contact-section {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #0023ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #0023ff;
+}
+
+/* Footer */
+footer {
+  background-color: #0023ff;
+  color: white;
+  padding: 40px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 2;
+  min-width: 250px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  min-width: 300px;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30
+}
+
+
 
  /* responsive  code*/
 @media (min-width: 320px) and (max-width: 500px) {

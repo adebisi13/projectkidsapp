@@ -126,6 +126,164 @@
                         </div>
                         </div>
                       </section>
+
+                      <section>
+                        <div class="location genLayout">
+                            <div class="titleBage">Our location</div>
+                            <div class="h"><h2>Not Just Online - We're Also Nearby</h2></div>
+                            <div class="map"><img src="img.folder/mapp.png" alt="" width="1000rem"></div>
+                            <div class="flex">
+                                <div class="h3">
+                                    <h3>Dokki Branch</h3>
+                                    <h3>Nasr City Branch</h3>
+                                </div>
+                            </div>
+                        </div>
+                      </section>
+
+                      <section>
+
+  <!-- FAQ Section -->
+  <section class="loc">
+    <div class="container genLayout">
+      <div class="titleBage">FAQs</div>
+      <div class="h"><h2>Frequently Asked Questions</h2></div>
+
+      <div class="faq">
+        <button class="faq-question active">
+         <div class="hh"> What age groups do Icon School programs target?</div>
+          <div class="icon"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer show">
+          Icon School programs target children and teenagers aged 6 to 16, with learning paths specifically designed to suit each age group and skill level.
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">
+          Does my child need any prior programming experience to start with you?
+          <div class="icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer">
+          <!-- Placeholder for answer -->
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">
+          What is the difference between the Programming and Robotics tracks?
+          <div class="icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer">
+          <!-- Placeholder for answer -->
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">
+          How can I track my child's progress throughout the course?
+          <div class="icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer">
+          <!-- Placeholder for answer -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <h3>Get In Touch With Us</h3>
+      <p>We’re here to answer your questions and explore collaboration opportunities.</p>
+      <p><i class="fa fa-phone"></i> +201142076740</p>
+      <p><i class="fa fa-envelope"></i> support@icons.com</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name" value="Zahra Mohammed">
+      <input type="email" placeholder="E-mail" value="example25@gmail.com">
+      <textarea placeholder="Write your message here..."></textarea>
+      <button type="submit">Send</button>
+      <div class="social-icons">
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-music"></i> <!-- TikTok fallback -->
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="your-logo.png" alt="Icon School Logo" class="logo">
+        <p>
+          At Icon School, kids learn to create games, websites, and animations through fun, hands-on coding lessons.
+          Start your child’s tech journey in a safe, creative space built just for young learners.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">B2B</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p><i class="fa fa-phone"></i> +201142076740</p>
+          <p><i class="fa fa-envelope"></i> support@icons.com</p>
+          <div class="footer-socials">
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-music"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">All Rights Reserved 7P © 2025</div>
+  </footer>
+
+  <script>
+    // Toggle FAQ
+    const faqButtons = document.querySelectorAll('.faq-question');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+
+        faqButtons.forEach(otherBtn => {
+          if (otherBtn !== btn) {
+            otherBtn.classList.remove('active');
+            otherBtn.nextElementSibling.classList.remove('show');
+            otherBtn.querySelector('i').className = 'fa fa-chevron-down';
+          }
+        });
+
+        btn.classList.toggle('active');
+        answer.classList.toggle('show');
+        icon.className = answer.classList.contains('show') ? 'fa fa-chevron-up' : 'fa fa-chevron-down';
+      });
+    });
+  </script>
+
+
+                      </section>
                   
                 
             
