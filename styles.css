@@ -493,4 +493,195 @@ footer {
         width: 100%;
         margin-top: 18rem;
     }
+
+    /* GENERAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* GRID PICTURES */
+.gridPic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.grd5 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* PRICING SECTION */
+.pricing {
+  margin: 5rem auto;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+}
+
+.gridd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.price .btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.price .btn button {
+  background-color: #20c464;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+/* LOCATION SECTION */
+.location {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* FAQ */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+/* CONTACT */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 3rem 5%;
+}
+
+.contact-left,
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0023ff;
+  color: white;
+  padding: 3rem 5%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 2;
+  min-width: 280px;
+}
+
+.footer-links {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-width: 280px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .gridPic {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .gridd {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .h3 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .pricing {
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .price .btn button {
+    width: 100%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Ultra-wide / Curved Monitors */
+@media (min-width: 1600px) {
+  body {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .pricing,
+  .container,
+  .location,
+  .contact-section,
+  footer {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
  }
